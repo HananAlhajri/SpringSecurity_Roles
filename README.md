@@ -6,30 +6,31 @@ Build simple project with descreption for spring security
 <li>Spring Security</li>
 <li>MySQL Drivet </li>
 
-# Tested Using PostMan: 
+# Test Using Postman: 
 
-## http://localhost:8081/api/v1/auth/authenticate
-
+### /api/v1/auth/authenticate
+```
 {
     "email": "hanan@example.com",
     "password":"123"
 }
-
-## http://localhost:8081/api/v1/auth/register
-
+```
+### /api/v1/auth/register
+```
 {
     "firstName": "Hanan",
     "lastName": "Alhajri",
     "email": "hanan@example.com",
     "password":"123"
 }
+```
 
+### /api/v1/demo-controller
 
-## http://localhost:8081/api/v1/demo-controller
-
-this page should premit the users from reaching it UNLESS you provide the token generated when you log in 
-
-> Go to Authorization 
-> Choose Type Berare Token 
-> Then, provide the token generated to you when you entered.
+This page should premit the users from reaching it UNLESS you provide the token generated when you log in(authenticate)
+<ol>
+<li> Go to Authorization </li>
+<li> Choose Type Berare Token </li> 
+<li> Then, provide the token generated to you when you entered </li>
+</ol>
 
